@@ -1,0 +1,135 @@
+.rc-modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+.rc-modal-inner-wrapper{
+  margin: 10px;
+}
+
+.rc-modal-content {
+  overflow:hidden;
+  width: fit-content;
+  margin: 30px auto;
+  min-width:500px;
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 6px;
+  outline: 0;
+  -webkit-box-shadow: 0 3px 9px rgba(0,0,0,.5);
+  box-shadow: 0 3px 9px rgba(0,0,0,.5);
+}
+
+.rc-modal-header{
+  padding: 15px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.rc-modal-title {
+    margin: 0;
+    line-height: 1.42857143;
+}
+
+.rc-modal-close{
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: .2;
+}
+.rc-modal-footer {
+    padding: 10px;
+    text-align: right;
+    border-top: 1px solid #e5e5e5;
+}
+
+.rc-btn-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.rc-btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid #00000045;
+    border-radius: 4px;
+}
+
+button.rc-modal-close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+}
+.rc-content-body{
+  padding: 10px;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0.0;
+    height: 0px;
+  }
+  to {
+    opacity: 1.0;
+    height: 20px;
+  }
+}
+
+.toggle-enter {
+  animation-name: fade-in;
+  animation-duration: 600ms;
+}
+.toggle-leave {
+  animation-name: fade-out;
+  animation-duration: 500ms;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+}
+
+@keyframes fade-in{
+  from {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+    
+  }
+}
